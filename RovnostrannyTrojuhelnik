@@ -1,0 +1,23 @@
+public class RovnostrannyTrojuhelnik {
+    private double delkaStrany;
+
+    public RovnostrannyTrojuhelnik(double delkaStrany) {
+        this.delkaStrany = delkaStrany;
+    }
+
+    public double getDelkaStrany() {
+        return delkaStrany;
+    }
+
+    public void setDelkaStrany(double delkaStrany) {
+        this.delkaStrany = delkaStrany;
+    }
+
+    public double vypocitejObvod() {
+        return 3 * delkaStrany;
+    }
+
+    public double vypocitejVysku() {
+        return (Math.sqrt(3) / 2) * delkaStrany;
+    }
+}
