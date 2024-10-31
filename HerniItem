@@ -1,0 +1,40 @@
+public class HerniItem {
+    private String jmeno;
+    private double hmotnost;
+    private int cena;
+    public HerniItem() {
+        this.jmeno = "neznámý item";
+        this.hmotnost = 0.0;
+        this.cena = 0;
+    }
+
+    public HerniItem(String jmeno, double hmotnost, int cena) {
+        this.jmeno = jmeno;
+        this.hmotnost = hmotnost;
+        this.cena = cena;
+    }
+
+    public String getJmeno() {
+        return jmeno;
+    }
+
+    public void setJmeno(String jmeno) {
+        this.jmeno = jmeno;
+    }
+
+    public double getHmotnost() {
+        return hmotnost;
+    }
+
+    public void setHmotnost(double hmotnost) {
+        this.hmotnost = hmotnost;
+    }
+
+    public int getCena() {
+        return cena;
+    }
+
+    public void setCena(int cena) {
+        this.cena = cena;
+    }
+}
