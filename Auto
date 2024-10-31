@@ -1,0 +1,39 @@
+public class Auto {
+    private String znacka;
+    private double mnozstviPaliva;
+    private double spotrebaPaliva;
+
+    public Auto(String znacka, double mnozstviPaliva, double spotrebaPaliva) {
+        this.znacka = znacka;
+        this.mnozstviPaliva = mnozstviPaliva;
+        this.spotrebaPaliva = spotrebaPaliva;
+    }
+
+    public String getZnacka() {
+        return znacka;
+    }
+
+    public double getMnozstviPaliva() {
+        return mnozstviPaliva;
+    }
+
+    public double getSpotrebaPaliva() {
+        return spotrebaPaliva;
+    }
+
+    public void setZnacka(String znacka) {
+        this.znacka = znacka;
+    }
+
+    public void setMnozstviPaliva(double mnozstviPaliva) {
+        this.mnozstviPaliva = mnozstviPaliva;
+    }
+
+    public void setSpotrebaPaliva(double spotrebaPaliva) {
+        this.spotrebaPaliva = spotrebaPaliva;
+    }
+
+    public double vypocitejMaxVzdalenost() {
+        return (mnozstviPaliva / spotrebaPaliva) * 100;
+    }
+}
