@@ -7,13 +7,12 @@ public class main {
         HerniItem mec = new HerniItem("Meč", 3.5, 200);
 
         System.out.println("Informace o herních itemech:");
-        System.out.println("---------------");
         System.out.println("Jméno: " + jed.getJmeno());
         System.out.println("Hmotnost: " + jed.getHmotnost() + " kg");
         System.out.println("Cena: " + jed.getCena() + " zlatých");
-    }
-}
-public static void main(String[] args) {
+
+
+
     Random random = new Random();
     double delkaStrany = 1 + random.nextInt(25);
 
@@ -25,8 +24,9 @@ public static void main(String[] args) {
     System.out.println("Délka strany trojúhelníka: " + trojuhelnik.getDelkaStrany());
     System.out.println("Obvod trojúhelníka: " + obvod);
     System.out.println("Výška trojúhelníka: " + vyska);
-}
-public static void main(String[] args) {
+
+
+
     Scanner scanner = new Scanner(System.in);
 
     System.out.print("Zadejte značku automobilu: ");
