@@ -1,0 +1,50 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        HerniItem jed = new HerniItem("Jed", 0.02, 50);
+        HerniItem mec = new HerniItem("Meč", 3.5, 200);
+
+        System.out.println("Informace o herních itemech:");
+        System.out.println("---------------");
+        System.out.println("Jméno: " + jed.getJmeno());
+        System.out.println("Hmotnost: " + jed.getHmotnost() + " kg");
+        System.out.println("Cena: " + jed.getCena() + " zlatých");
+    }
+}
+public static void main(String[] args) {
+    Random random = new Random();
+    double delkaStrany = 1 + random.nextInt(25);
+
+    RovnostrannyTrojuhelnik trojuhelnik = new RovnostrannyTrojuhelnik(delkaStrany);
+
+    double obvod = trojuhelnik.vypocitejObvod();
+    double vyska = trojuhelnik.vypocitejVysku();
+
+    System.out.println("Délka strany trojúhelníka: " + trojuhelnik.getDelkaStrany());
+    System.out.println("Obvod trojúhelníka: " + obvod);
+    System.out.println("Výška trojúhelníka: " + vyska);
+}
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Zadejte značku automobilu: ");
+    String znacka = scanner.nextLine();
+
+    System.out.print("Zadejte množství paliva v nádrži (v litrech): ");
+    double mnozstviPaliva = scanner.nextDouble();
+
+    System.out.print("Zadejte spotřebu paliva (v litrech na 100 km): ");
+    double spotrebaPaliva = scanner.nextDouble();
+
+    Auto auto = new Auto(znacka, mnozstviPaliva, spotrebaPaliva);
+
+    double maxVzdalenost = auto.vypocitejMaxVzdalenost();
+
+    System.out.println("\nInformace o automobilu:");
+    System.out.println("Značka: " + auto.getZnacka());
+    System.out.println("Množství paliva v nádrži: " + auto.getMnozstviPaliva() + " litrů");
+    System.out.println("Spotřeba paliva: " + auto.getSpotrebaPaliva() + " litrů na 100 km");
+    System.out.println("Maximální vzdálenost, kterou ujede s aktuálním množstvím paliva: " + maxVzdalenost + " km");
+}
